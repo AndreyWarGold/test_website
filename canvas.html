@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <title>Canvas</title>
+   <link rel="stylesheet" href="assets/css/layout.css">
+   <link rel="stylesheet" href="assets/css/canvas.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="assets/js/canvas.js"></script>
+   <script>
+     window.onload = function() {
+      canvas('#draw', {
+      width: 500,
+      height: 300,
+      strokeWidth: 5,
+      strokeColor: "#df4b26"
+      });
+     }
+   </script>
+</head>
+<body>
+<header class="header"><img src="assets/img/logo.png" height="70" width="70"></header>
+<div class="container">
+   <main class="center column">
+       <article>
+           <h1>Heading</h1>
+           <p></p>
+           <canvas id="draw"></canvas>
+           <div class="toolbar" id="toolbar">
+          <input type="color" id="color-picker" />
+          <input type="range" id="size-picker" name="Size" min="0" max="100" value="50" step="10">
+</div>
+
+       </article>
+   </main>
+   <nav class="left column">
+       <h3>Main</h3>
+       <ul>
+           <li><a href="index.html">Main</a></li>
+       </ul>
+       <h3>Contact</h3>
+       <ul>
+           <li><a href="contact.html">Contact</a></li>
+       </ul>
+       <h3>About</h3>
+       <ul>
+           <li><a href="about.html">About</a></li>
+       </ul>
+       <h3>Media</h3>
+       <ul>
+           <li><a href="media.html">Media</a></li>
+       </ul>
+       <h3>Table</h3>
+       <ul>
+           <li><a href="table.html">Table</a></li>
+       </ul>
+       <h3>Slider</h3>
+       <ul>
+           <li><a href="slider.html">Slider</a></li>
+       </ul>
+   </nav>
+   <div class="right column">
+       <h3>Right heading</h3>
+       <p></p>
+   </div>
+   <div class="push"></div>
+</div>
+<div class="footer-wrapper">
+   <footer class="footer"><p>Footer...</p></footer>
+</div>
+</body>
+</html>
